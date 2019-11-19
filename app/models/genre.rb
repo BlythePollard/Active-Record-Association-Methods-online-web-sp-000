@@ -12,6 +12,8 @@ class Genre < ActiveRecord::Base
 
   def all_artist_names
     artist_names = self.artists.first.name
-    artist_names.map {|n| n}
+    artist_names.map do |n|
+      n 
+    end
   end
 end
