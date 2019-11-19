@@ -11,10 +11,7 @@ class Genre < ActiveRecord::Base
   end
 
   def all_artist_names
-    artist_names = self.artists.first.name
-    binding.pry
-    artist_names.each do |n|
-      n 
+    self.artists
     end
   end
 end
